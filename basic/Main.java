@@ -32,6 +32,8 @@ class CustomThread extends Thread {
                 System.out.println(Thread.currentThread().getName() + " was interrupted");
                 ie.printStackTrace();
                 return;
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
